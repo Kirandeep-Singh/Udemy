@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="SDPVM_INSTL_CS18GA_MJ" version="2.3">
+    <node name="SDPVM_INSTL_CS18GA_MJ" type="SDP">
+        <host name="host1">
+            <parameters>
+                <parameter description="Name of the VM instance for host 1" name="_vmname" type="STRING" value="SDPAA"/>
+            </parameters>
+            <access address="10.184.44.64" connection="SFTP" name="host1-ft" password="Ericsson2018#321" username="charles"/>
+            <access address="10.184.44.64" connection="SSH" name="host1-root" password="Ericsson2018#321" username="root"/>
+            <access address="10.184.44.64" connection="SSH" name="host1-sdpuser" password="Ericsson2018#321" username="charles"/>
+        </host>
+        <host name="host2">
+            <parameters>
+                <parameter description="Name of the VM instance for host 2" name="_vmname" type="STRING" value="SDPBB"/>
+            </parameters>
+            <access address="10.184.44.112" connection="SFTP" name="host2-ft" password="Ericsson2018#321" username="charles"/>
+            <access address="10.184.44.112" connection="SSH" name="host2-root" password="Ericsson2018#321" username="root"/>
+            <access address="10.184.44.112" connection="SSH" name="host2-sdpuser" password="Ericsson2018#321" username="charles"/>
+        </host>
+        <host name="vcenter">
+            <parameters>
+                <parameter description="vCenter VM instances path"
+                    name="_vcpath" type="STRING" value="/Datacenter/vm/SDP1801"/>
+                <parameter description="Size for dblog file system"
+                     name="_vcdblogsize" type="STRING" value="30720"/>
+                <parameter
+                    description="vCenter port group for traffic 2 network"
+                    name="_vcpgtraffic2" type="STRING" value="VM-Network"/>
+                <parameter description="vCenter port group for private network"
+                    name="_vcpgprivate" type="STRING" value="Private-LAN"/>
+                <parameter
+                    description="vCenter port group for traffic 1 network"
+                    name="_vcpgtraffic1" type="STRING" value="VM-Network"/>
+                <parameter description="Datastore for xvg file system on host 1"
+                    name="_vcdsxvg1" type="STRING" value="Datastore44103"/>
+                <parameter
+                    description="Datastore for dblog file system on host 2"
+                    name="_vcdsdblog2" type="STRING" value="Datastore44103"/>
+                <parameter description="vCenter port group for main network"
+                    name="_vcpgmain" type="STRING" value="VM-Network"/>
+                <parameter
+                    description="Datastore for dblog file system on host 1"
+                    name="_vcdsdblog1" type="STRING" value="Datastore44103"/>
+                 <parameter description="Datastore for xvg file system on host 2"
+                    name="_vcdsxvg2" type="STRING" value="Datastore44103"/>
+                <parameter
+                    description="Datastore for root file system on host 2"
+                    name="_vcdsroot2" type="STRING" value="Datastore44103"/>
+                <parameter
+                    description="Datastore for root file system on host 1"
+                    name="_vcdsroot1" type="STRING" value="Datastore44103"/>
+                <parameter description="IP of physical blade for host 2"
+                    name="_vcblade2" type="STRING" value="10.184.44.103"/>
+                <parameter description="IP of physical blade for host 1"
+                    name="_vcblade1" type="STRING" value="10.184.44.103"/>
+                <parameter description="Size for xvg file system"
+                    name="_vcxvgsize" type="STRING" value="102400"/>
+                <parameter
+                    description="Datastore for backup file system on host 1"
+                    name="_vcdsbackup1" type="STRING" value="Datastore44103"/>
+                <parameter
+                    description="Datastore for backup file system on host 2"
+                    name="_vcdsbackup2" type="STRING" value="Datastore44103"/>
+                <parameter description="Size for backup file system"
+                    name="_vcbackupsize" type="STRING" value="10240"/>
+            </parameters>
+			<access address="10.184.41.219" connection="SSH" name="vcenter-user"
+			password="Ericsson@123" username="administrator@vsphere.local"/>
+        </host>
+    </node>
+</network>

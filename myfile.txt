@@ -1,0 +1,13 @@
+Key=Value
+JOBNAME=KD1234
+ENVTYPE=VM
+ACTIONTYPE=INSTL
+NODETYPE=SDP
+DESTICP=CS18-2GA
+SUFUSER=KD123
+SUFPASS=Sdpuser@12345
+net=node2.xml
+ini1=sdp2.host1.deploy.host.ini
+ini2=sdp2.host2.deploy.host.ini
+quest=sdp2.node2.quest.install.xml
+plugin=Preparerequestinstallation_PA10.xlsm

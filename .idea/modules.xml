@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:/Python/Project1/.idea/Project1.iml" filepath="C:/Python/Project1/.idea/Project1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Udemy.iml" filepath="$PROJECT_DIR$/.idea/Udemy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../csaf-cicd/.idea/csaf-cicd.iml" filepath="$PROJECT_DIR$/../csaf-cicd/.idea/csaf-cicd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../csaf-pipeline/.idea/csaf-pipeline.iml" filepath="$PROJECT_DIR$/../csaf-pipeline/.idea/csaf-pipeline.iml" />
+    </modules>
+  </component>
+</project>

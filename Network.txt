@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="Test_Single" version="2.3">
+    <node name="InstallationServer" type="CF-IS">
+        <host name="cfInstallationServer">
+            <access address="10.184.44.61" connection="SFTP" name="instserv-root" password="Automation@1234" username="root"/>
+            <access address="10.184.44.61" connection="SSH" name="instserv-ssh" password="Automation@1234" username="root"/>
+        </host>
+    </node>
+    <node name="OCC" type="OCC">
+	<host name="TESTOCCA">
+        <parameters>
+<parameter description="Console Username" name="_consoleusername" type="STRING" value="admin"/>
+<parameter description="Console IP Address" name="_consoleipaddr" type="STRING" value="10.184.41.247"/>
+<parameter description="Console Password" name="_consolepassword" type="PASSWORD" value="admin@123"/>
+<parameter description="OGW SSH Password" name="_ogwsshpassword" type="PASSWORD" value="Ericsson@123456"/>
+<parameter description="Deploy Type" name="_deploytype" type="STRING" value="single"/>
+ </parameters>
+<access address="10.184.41.247" connection="SSH" console="ILO" name="host-console" password="admin@123" username="admin"/>
+<access address="10.184.41.245" connection="SSH" name="ogw" password="Ericsson@123456" username="ogw"/>
+<access address="10.184.41.245" connection="SFTP" name="ogw-sftp" password="Ericsson@123456" username="ogw"/>
+<access address="10.184.41.245" connection="SSH" name="sysadmin" password="Ericsson@123456" username="testadmin"/>
+</host>
+
+    </node>
+</network>
